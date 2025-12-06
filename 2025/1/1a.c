@@ -1,13 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
-#include <fcntl.h>
-#include <unistd.h>
 #include <stdlib.h>
-#include <sys/mman.h>
-#include <sys/stat.h>
 #include <string.h>
-#include <errno.h>
-#include <regex.h>
 
 #include "lib_mmap.h"
 #include "lib_process_patterns.h"
