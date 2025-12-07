@@ -15,7 +15,7 @@ int process_patterns(mapped_file_t mapped_file, pattern_yield_context_t* yield_c
 	regex_t regex;
 	const char *pattern = yield_ctx->regex_pattern;
 	int c = 0;
-	if ((c = regcomp(&regex, pattern, REG_ENHANCED) != 0)) {
+	if ((c = regcomp(&regex, pattern, REG_EXTENDED) != 0)) {
 		fprintf(stderr, "Error compiling regex: %d\n", c);
 		return -1;
 	}
