@@ -42,5 +42,6 @@ void mmap_file_destroy(mapped_file_t* mapped_file) {
 		return;
 	}
 	munmap(mapped_file->region_start, mapped_file->size);
+	memset(mapped_file, 0, sizeof(*mapped_file));
 }
 
