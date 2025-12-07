@@ -1,4 +1,5 @@
 *.o
 *.a
 *input.txt
+*.idea
 
