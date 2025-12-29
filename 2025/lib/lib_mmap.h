@@ -1,5 +1,7 @@
 #ifndef __LIB_MMAP__
-#define  __LIB_MMAP__
+#define __LIB_MMAP__
+
+#include <stddef.h>
 
 typedef struct {
 	char* region_start;
@@ -11,4 +13,3 @@ int mmap_file_init(const char* path, mapped_file_t* mapped_file);
 void mmap_file_destroy(mapped_file_t* mapped_file);
 
 #endif // __LIB_MMAP__
-
